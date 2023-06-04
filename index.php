@@ -1,3 +1,4 @@
+<?php include('db.php');?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +19,7 @@
 </header>
 
 <body>
+    <!--PARTE PARA REGISTRARSE-->
     <div class="container-form sign-up">
         <div class="welcome-back">
             <div class="message">
@@ -26,7 +28,7 @@
                 <button class="sign-up-btn">Iniciar Sesion</button>
             </div>
         </div>
-        <form class="formulario">
+        <form class="formulario" action="db.php" method="post">
             <h2 class="create-account">Crear una cuenta</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -40,14 +42,17 @@
                 </div>
             </div>
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <input type="button" value="Registrarse">
+            <input name="nameReg" type="text" placeholder="Nombre">
+            <input name="emailReg" type="email" placeholder="Email">
+            <input name="passwordReg" type="password" placeholder="Contraseña">
+            <input name="buttonReg" type="button" value="Registrarse">
         </form>
     </div>
+
+   <!--PARTE PARA LOGUEARSE--> 
     <div class="container-form sign-in">
-        <form class="formulario">
+        
+        <form class="formulario" action="db.php" method="post">
             <h2 class="create-account">Iniciar Sesion</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -61,9 +66,9 @@
                 </div>
             </div>
             <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <input type="button" value="Iniciar Sesion">
+            <input name="emaiLog" type="email" placeholder="Email">
+            <input name="passwordLog" type="password" placeholder="Contraseña">
+            <input name="buttonLog" type="button" value="Iniciar Sesion">
         </form>
         <div class="welcome-back">
             <div class="message">
@@ -76,5 +81,9 @@
     <script src="scriptLogin.js"></script>
   
 </body>
+<<<<<<< HEAD:index.php
 
 </html>    
+=======
+</html>
+>>>>>>> 14e89bc0fac0b312c2dae81d7a00f6c8f6479a13:indexLogin.html
