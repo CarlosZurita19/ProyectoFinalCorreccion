@@ -74,6 +74,7 @@
         </div>
     </div>
     <script src="scriptLogin.js"></script>
+  
 </body>
 
-</html>
+</html>    

@@ -349,6 +349,6 @@ function pageCall(page){
 }
 
 function recargarPagina(){
-location.reload();
+  window.location.href = "indexMain.php"
 }
 /*--------------------------------------------*/

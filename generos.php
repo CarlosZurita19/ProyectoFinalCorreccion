@@ -10,7 +10,7 @@
     <header>
         <div class="logo">
         <div class="textlogo">
-                <a href="index.html" style="text-decoration:none"><p class="logo1">Pelis<span claass ="logo2">Media</span></p></a>
+                <a onclick="recargarPagina();" style="text-decoration:none"><p class="logo1">Pelis<span class ="logo2">Media</span></p></a>
         </div>
     </div>
         <form  id="form">
@@ -36,5 +36,6 @@
 
     </div>
     <script src="generos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

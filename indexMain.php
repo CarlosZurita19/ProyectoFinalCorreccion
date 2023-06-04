@@ -13,8 +13,8 @@
             <div class="textlogo" >
                 <p class="logo1" onclick="recargarPagina();">Pelis<span class ="logo2" onclick="recargarPagina();">Media</span></p>
             </div>
-            <div class="btnGeneros">
-                <a href="generos.html" onclick="setGenre();" style="text-decoration:none"><span class="generos">Generos</span></a>
+            <div class="btnGeneros"> 
+                <a href="generos.php" onclick="setGenre();" style="text-decoration:none"><span class="generos">Generos</span></a>
             </div>
         
         </div>
@@ -44,5 +44,6 @@
 
     </div>
     <script src="script.js"></script>
+    <script src="generos.html"></script>
 </body>
 </html>
