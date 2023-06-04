@@ -1,3 +1,4 @@
+<?php include('db.php');?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +28,7 @@
                 <button class="sign-up-btn">Iniciar Sesion</button>
             </div>
         </div>
-        <form class="formulario" action="insercion.php" method="post">
+        <form class="formulario" action="db.php" method="post">
             <h2 class="create-account">Crear una cuenta</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -51,7 +52,7 @@
    <!--PARTE PARA LOGUEARSE--> 
     <div class="container-form sign-in">
         
-        <form class="formulario" action="validar.php" method="post">
+        <form class="formulario" action="db.php" method="post">
             <h2 class="create-account">Iniciar Sesion</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -79,5 +80,4 @@
     </div>
     <script src="scriptLogin.js"></script>
 </body>
-
 </html>
