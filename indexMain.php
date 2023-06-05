@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>PelisMedia</title>
 </head>
 <body>
@@ -14,13 +15,16 @@
                 <p class="logo1" onclick="recargarPagina();">Pelis<span class ="logo2" onclick="recargarPagina();">Media</span></p>
             </div>
             <div class="btnGeneros"> 
-                <a href="generos.php" onclick="setGenre();" style="text-decoration:none"><span class="generos">Generos</span></a>
+                <a href="generos.php" style="text-decoration:none"><span class="generos">Generos</span></a>
             </div>
         
         </div>
         <form  id="form">
             <input type="text" placeholder="Search" id="search" class="search">
         </form>
+        <div class="btnSalir">
+        <span onclick="salir();" class="material-symbols-outlined">logout </span>
+        </div>
     </header>
     <div id="tags">
         

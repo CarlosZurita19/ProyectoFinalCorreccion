@@ -1,89 +1,29 @@
-<?php include('db.php');?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styleLogin.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <title>Iniciar Sesion</title>
+    <title>login</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
-
-<header>
-
-</header>
-
 <body>
-    <!--PARTE PARA REGISTRARSE-->
-    <div class="container-form sign-up">
-        <div class="welcome-back">
-            <div class="message">
-                <h2>Bienvenido a<p class="logo1">Pelis<span claass ="logo2">Media</span></p></h2>
-                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
-                <button class="sign-up-btn">Iniciar Sesion</button>
-            </div>
-        </div>
-        <form class="formulario" action="db.php" method="post">
-            <h2 class="create-account">Crear una cuenta</h2>
-            <div class="iconos">
-                <div class="border-icon">
-                    <i class='bx bxl-instagram'></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-linkedin' ></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-facebook-circle' ></i>
-                </div>
-            </div>
-            <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input name="nameReg" type="text" placeholder="Nombre">
-            <input name="emailReg" type="email" placeholder="Email">
-            <input name="passwordReg" type="password" placeholder="Contraseña">
-            <input name="buttonReg" type="button" value="Registrarse">
-        </form>
-    </div>
+    <div class="Caja">
+   <form action="validar.php" method="post">
+   <h1> <p class="logo1">Pelis<span class ="logo2">Media</span></p></h1>
+   <p class="blanco">Correo Electronico <input type="text" placeholder="ingrese su Correo Electronico" name="usuario"></p>
+   <p class="blanco">Contraseña <input type="password" placeholder="ingrese su contraseña" name="password"></p>
+   <input class="btnConf" type="submit" value="Ingresar">
+   
+   </form>
+</div> 
 
-   <!--PARTE PARA LOGUEARSE--> 
-    <div class="container-form sign-in">
-        
-        <form class="formulario" action="db.php" method="post">
-            <h2 class="create-account">Iniciar Sesion</h2>
-            <div class="iconos">
-                <div class="border-icon">
-                    <i class='bx bxl-instagram'></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-linkedin' ></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-facebook-circle' ></i>
-                </div>
-            </div>
-            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
-            <input name="emaiLog" type="email" placeholder="Email">
-            <input name="passwordLog" type="password" placeholder="Contraseña">
-            <input name="buttonLog" type="button" value="Iniciar Sesion">
-        </form>
-        <div class="welcome-back">
-            <div class="message">
-                <h2>Bienvenido de nuevo</h2>
-                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
-                <button class="sign-in-btn">Registrarse</button>
-            </div>
-        </div>
-    </div>
-    <script src="scriptLogin.js"></script>
-  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </body>
-<<<<<<< HEAD:index.php
-
-</html>    
-=======
 </html>
->>>>>>> 14e89bc0fac0b312c2dae81d7a00f6c8f6479a13:indexLogin.html
