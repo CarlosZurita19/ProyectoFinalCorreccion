@@ -355,4 +355,7 @@ function recargarPagina(){
 function salir(){
   window.location.href = "index.php"
 }
+function registrar() {
+  window.location.href = "indexRegistrar.php"
+}
 /*--------------------------------------------*/

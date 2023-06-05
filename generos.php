@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>PelisMedia</title>
 </head>
 <body>
@@ -16,6 +17,9 @@
         <form  id="form">
             <input type="text" placeholder="Search" id="search" class="search">
         </form>
+        <div class="btnSalir">
+        <span onclick="salir();" class="material-symbols-outlined">logout </span>
+        </div>
     </header>
     <div id="tags">
         

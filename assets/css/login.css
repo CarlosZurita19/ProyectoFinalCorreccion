@@ -82,6 +82,16 @@ body{
 	color: white;
 	
 }
+
+.cuentaReg{
+	color:white;
+	margin-top: 2rem;
+}
+.cuentaReg:hover{
+	cursor:pointer;
+	text-decoration-line: underline;
+
+}
 .mensaje{
 	width: 100%;
 	max-width: 350px;
@@ -157,6 +167,7 @@ header a{
 		margin-top: 12px;
 		font-size: 16px
 	}
+	
 	body{
 		background-image:url(../assets/img/FondoCine.jpg);
 		max-width: 100%;

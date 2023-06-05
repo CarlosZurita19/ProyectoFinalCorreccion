@@ -359,4 +359,7 @@ function pageCall(page){
 function recargarPagina(){
   window.location.href = "indexMain.php"
 }
+function salir(){
+  window.location.href = "index.php"
+}
 /*--------------------------------------------*/
