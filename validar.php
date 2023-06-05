@@ -8,12 +8,20 @@ $resultado=mysqli_query($conexion,$consulta);
 
 $filas=mysqli_num_rows($resultado);
 
-if($filas){
-  
+if((empty($_POST['usuario'])) && (empty($_POST['password']))){
+    echo'<script type="text/javascript">
+    alert("Llene los campos");
+    window.location.href="index.php";
+    </script>';
+}
+else if(!$filas){
+    echo'<script type="text/javascript">
+    alert("No existe el usuario");
+    window.location.href="index.php";
+    </script>';
+}
+else{
     header("location:indexMain.php");
-
-}else{
-  
 }
 mysqli_free_result($resultado);
 mysqli_close($conexion);
