@@ -357,9 +357,9 @@ function pageCall(page){
 }
 
 function recargarPagina(){
-  window.location.href = "indexMain.php"
+  window.location.href = "indexMain.html"
 }
 function salir(){
-  window.location.href = "index.php"
+  window.location.href = "index.html"
 }
 /*--------------------------------------------*/

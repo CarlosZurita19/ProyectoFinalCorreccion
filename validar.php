@@ -11,17 +11,17 @@ $filas=mysqli_num_rows($resultado);
 if((empty($_POST['usuario'])) && (empty($_POST['password']))){
     echo'<script type="text/javascript">
     alert("Llene los campos");
-    window.location.href="index.php";
+    window.location.href="index.html";
     </script>';
 }
 else if(!$filas){
     echo'<script type="text/javascript">
     alert("No existe el usuario");
-    window.location.href="index.php";
+    window.location.href="index.html";
     </script>';
 }
 else{
-    header("location:indexMain.php");
+    header("location:indexMain.html");
 }
 mysqli_free_result($resultado);
 mysqli_close($conexion);

@@ -11,13 +11,13 @@ mysqli_close($conexion);
 if((empty($_POST['nombre'])) || (empty($_POST['correo'])) || (empty($_POST['password']))){
     echo'<script type="text/javascript">
     alert("Llene los campos");
-    window.location.href="indexRegistrar.php";
+    window.location.href="indexRegistrar.html";
     </script>';
 }
 else{
 echo'<script type="text/javascript">
 alert("Registro exitoso");
-window.location.href="index.php";
+window.location.href="index.html";
 </script>';
 }
 

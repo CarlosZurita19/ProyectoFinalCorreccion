@@ -349,13 +349,13 @@ function pageCall(page){
 }
 
 function recargarPagina(){
-  window.location.href = "indexMain.php"
+  window.location.href = "indexMain.html"
 }
 
 function salir(){
-  window.location.href = "index.php"
+  window.location.href = "index.html"
 }
 function registrar() {
-  window.location.href = "indexRegistrar.php"
+  window.location.href = "indexRegistrar.html"
 }
 /*--------------------------------------------*/
