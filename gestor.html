@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de peliculas</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="assets/css/styleGestor.css">
+</head>
+<header>
+  <div class="logo">
+      <div class="textlogo" >
+          <p class="logo1" onclick="recargarPagina();">Pelis<span class ="logo2" onclick="recargarPagina();">Media</span></p>
+      </div>
+  </div>
+
+  </header>
+<body>
+  <button type="button" id="btnAdd">Agregar producto</button>
+
+  <div class="modal" id="modalAdd">
+    <div class="form-content">
+      <div class="btn-close-form" onclick="closeModalAdd()">X</div>
+      <div class="form-body">
+        <form id="formAdd">
+          <div class="control">
+            <label>Nombre: </label>
+            <input type="text" name="nombre">
+          </div>
+          <div class="control">
+            <label>Descrip: </label>
+            <input type="text" name="descrip">
+          </div>
+          <div class="control">
+            <label>Genero: </label>
+            <input type="text" name="genero">
+          </div>
+        </form>
+      </div>
+      <div class="form-footer">
+          <button type="button" onclick="closeModalAdd()">Cancelar</button>
+          <button type="button" onclick="createProduct()">Guardar</button>
+      </div>
+      <span id="msgFormAdd" class="msg-error"></span>
+    </div>
+  </div>
+
+  <div class="modal" id="modalEdit">
+    <div class="form-content">
+      <div class="btn-close-form" onclick="closeModalEdit()">X</div>
+      <div class="form-body">
+        <form id="formEdit">
+          <input type="hidden" id="ID">
+          <div class="control">
+            <label>Nombre: </label>
+            <input type="text" name="nombre">
+          </div>
+          <div class="control">
+            <label>Descripcion: </label>
+            <input type="text" name="descrip">
+          </div>
+          <div class="control">
+            <label>Genero: </label>
+            <input type="text" name="genero">
+          </div>
+        </form>
+      </div>
+      <div class="form-footer">
+          <button type="button" onclick="closeModalEdit()">Cancelar</button>
+          <button type="button" onclick="updateProduct()">Guardar cambios</button>
+      </div>
+      <span id="msgFormEdit" class="msg-error"></span>
+    </div>
+  </div>
+
+  <div class="modal" id="modalConfirm">
+    <div class="form-content">
+      <div class="btn-close-form" onclick="closeModalConfirm()">X</div>
+      <div class="form-body">
+        <h3>Eliminar</h3>
+        <p>¿Estas seguro de eliminar el producto?</p>
+      </div>
+      <div class="form-footer">
+          <button type="button" onclick="confirmDelete(false)">No</button>
+          <button type="button" onclick="confirmDelete(true)">Si</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert" id="alert">Algo sucedió..</div>
+
+  <div id="productsList" class="products-list"></div>
+
+
+<script src="gestorScript.js"></script>
+</body>
+</html>
